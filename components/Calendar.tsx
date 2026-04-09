@@ -99,7 +99,7 @@ export default function Calendar() {
 
 
   return (
-    <section className="grid min-h-0 grid-rows-[auto_1fr] bg-white p-3 sm:p-4">
+    <section className="grid h-full min-h-0 grid-rows-[auto_1fr] bg-white p-3 sm:p-4">
       <div className="mb-2 flex items-end justify-between border-b border-slate-200 pb-2">
         <div>
           <p className="font-display text-[0.7rem] uppercase tracking-[0.25em] text-slate-500">Wall Calendar</p>
@@ -110,22 +110,26 @@ export default function Calendar() {
         </div>
       </div>
 
-      <div className="grid min-h-0 gap-3 md:grid-cols-[190px_1fr] md:gap-4">
-        <div className="order-1 md:order-2 rounded-2xl border border-slate-200 bg-slate-50/35 p-3 sm:p-4 flex flex-col min-h-0">
+      <div className="grid min-h-0 gap-3 md:grid-cols-[220px_1fr] md:gap-4">
+        <div className="order-2 md:order-1">
+          <NotesPanel key={getRangeKey(normalizedRange) || "no-range"} selectedRange={normalizedRange} compact animated />
+        </div>
+
+        <div className="order-1 flex min-h-0 flex-col rounded-2xl border border-slate-200 bg-slate-50/35 p-3 sm:p-4">
           <Header monthLabel={monthLabel} onPrevious={() => moveMonth("prev")} onNext={() => moveMonth("next")} />
 
-          <div className="mb-2 grid grid-cols-7 gap-1 px-0.5">
-            {WEEKDAY_LABELS.map((label) => (
-              <div
-                key={label}
-                className="px-0.5 py-1 text-center text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-slate-500"
-              >
-                {label}
-              </div>
-            ))}
-          </div>
+          <div className="mx-auto flex w-full max-w-[500px] flex-1 min-h-0 flex-col">
+            <div className="mb-2 grid grid-cols-7 gap-1 px-0.5">
+              {WEEKDAY_LABELS.map((label) => (
+                <div
+                  key={label}
+                  className="px-0.5 py-1 text-center text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-slate-500"
+                >
+                  {label}
+                </div>
+              ))}
+            </div>
 
-          <div className="flex-1 min-h-0 overflow-y-auto pr-1">
             <div
               key={`${format(currentMonth, "yyyy-MM")}-${monthToken}`}
               className={[
@@ -133,32 +137,31 @@ export default function Calendar() {
                 direction === "next" ? "animate-month-next" : "animate-month-prev",
               ].join(" ")}
             >
-            {monthGrid.map((entry, index) => {
-              const isStart = normalizedRange ? isSameDate(entry.date, normalizedRange.start) : false;
-              const isEnd = normalizedRange ? isSameDate(entry.date, normalizedRange.end) : false;
-              const isSingleDayRange = normalizedRange
-                ? isSameDate(normalizedRange.start, normalizedRange.end) && isStart && isEnd
-                : false;
-              const inRange = normalizedRange ? isStrictlyBetween(entry.date, normalizedRange) : false;
-              const weekend = entry.date.getDay() === 0 || entry.date.getDay() === 6;
+              {monthGrid.map((entry, index) => {
+                const isStart = normalizedRange ? isSameDate(entry.date, normalizedRange.start) : false;
+                const isEnd = normalizedRange ? isSameDate(entry.date, normalizedRange.end) : false;
+                const isSingleDayRange = normalizedRange
+                  ? isSameDate(normalizedRange.start, normalizedRange.end) && isStart && isEnd
+                  : false;
+                const inRange = normalizedRange ? isStrictlyBetween(entry.date, normalizedRange) : false;
+                const weekend = entry.date.getDay() === 0 || entry.date.getDay() === 6;
 
-              return (
-                <DayCell
-                  key={entry.date.toISOString()}
-                  index={index}
-                  date={entry.date}
-                  dayNumber={entry.date.getDate()}
-                  isCurrentMonth={entry.isCurrentMonth}
-                  isToday={isToday(entry.date)}
-                  isWeekend={weekend}
-                  isRangeStart={isStart}
-                  isRangeEnd={isEnd}
-                  isInRange={inRange}
-                  isRangeSingle={isSingleDayRange}
-                  onSelect={() => handleDaySelect(entry.date)}
-                />
-              );
-            })}
+                return (
+                  <DayCell
+                    key={entry.date.toISOString()}
+                    index={index}
+                    dayNumber={entry.date.getDate()}
+                    isCurrentMonth={entry.isCurrentMonth}
+                    isToday={isToday(entry.date)}
+                    isWeekend={weekend}
+                    isRangeStart={isStart}
+                    isRangeEnd={isEnd}
+                    isInRange={inRange}
+                    isRangeSingle={isSingleDayRange}
+                    onSelect={() => handleDaySelect(entry.date)}
+                  />
+                );
+              })}
             </div>
           </div>
 
@@ -167,10 +170,6 @@ export default function Calendar() {
               ? `${format(normalizedRange.start, "MMM d, yyyy")} to ${format(normalizedRange.end, "MMM d, yyyy")}`
               : "Pick a start date, then an end date. Click again to begin a new range."}
           </div>
-        </div>
-
-        <div className="order-2 md:order-1">
-          <NotesPanel key={getRangeKey(normalizedRange) || "no-range"} selectedRange={normalizedRange} compact animated />
         </div>
       </div>
     </section>
