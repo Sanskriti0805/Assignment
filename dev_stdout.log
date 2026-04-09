@@ -1,0 +1,38 @@
+
+> assignment-wall-calendar@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.2 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://172.22.100.143:3000
+✓ Ready in 616ms
+
+ GET / 200 in 716ms (next.js: 350ms, application-code: 366ms)
+✓ Compiled in 74ms
+✓ Compiled in 50ms
+✓ Compiled in 58ms
+✓ Compiled in 45ms
+✓ Compiled in 38ms
+✓ Compiled in 116ms
+ GET / 200 in 160ms (next.js: 62ms, application-code: 99ms)
+ GET / 200 in 42ms (next.js: 11ms, application-code: 31ms)
+✓ Compiled in 50ms
+ GET / 500 in 223ms (next.js: 60ms, application-code: 163ms)
+✓ Compiled in 66ms
+ GET / 500 in 148ms (next.js: 57ms, application-code: 91ms)
+✓ Compiled in 32ms
+ GET / 500 in 159ms (next.js: 54ms, application-code: 105ms)
+✓ Compiled in 30ms
+ GET / 500 in 170ms (next.js: 50ms, application-code: 120ms)
+✓ Compiled in 39ms
+ GET / 500 in 183ms (next.js: 61ms, application-code: 122ms)
+✓ Compiled in 40ms
+ GET / 500 in 213ms (next.js: 66ms, application-code: 146ms)
+✓ Compiled in 57ms
+ GET / 500 in 148ms (next.js: 48ms, application-code: 100ms)
+✓ Compiled in 33ms
+ GET / 500 in 151ms (next.js: 49ms, application-code: 102ms)
+✓ Compiled in 119ms
+ GET / 500 in 150ms (next.js: 50ms, application-code: 100ms)
+✓ Compiled in 33ms
+ GET / 200 in 157ms (next.js: 52ms, application-code: 105ms)

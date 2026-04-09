@@ -1,0 +1,54 @@
+<svg width="1280" height="960" viewBox="0 0 1280 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="40" x2="1140" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ECFEFF"/>
+      <stop offset="0.48" stop-color="#DBEAFE"/>
+      <stop offset="1" stop-color="#F8FAFC"/>
+    </linearGradient>
+    <linearGradient id="sheet" x1="640" y1="220" x2="640" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F8FAFC"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="960" fill="url(#bg)"/>
+
+  <circle cx="156" cy="112" r="72" fill="#E0F2FE"/>
+  <circle cx="1140" cy="180" r="96" fill="#F0F9FF"/>
+  <circle cx="1080" cy="860" r="120" fill="#E2E8F0" fill-opacity="0.4"/>
+
+  <rect x="250" y="140" width="780" height="700" rx="36" fill="url(#sheet)" stroke="#E2E8F0" stroke-width="2"/>
+  <rect x="250" y="140" width="780" height="110" rx="36" fill="#0EA5E9"/>
+  <rect x="250" y="214" width="780" height="36" fill="#0EA5E9"/>
+
+  <circle cx="420" cy="140" r="16" fill="#0284C7"/>
+  <circle cx="860" cy="140" r="16" fill="#0284C7"/>
+
+  <g fill="#E2E8F0">
+    <rect x="320" y="308" width="74" height="56" rx="14"/>
+    <rect x="420" y="308" width="74" height="56" rx="14"/>
+    <rect x="520" y="308" width="74" height="56" rx="14"/>
+    <rect x="620" y="308" width="74" height="56" rx="14"/>
+    <rect x="720" y="308" width="74" height="56" rx="14"/>
+    <rect x="820" y="308" width="74" height="56" rx="14"/>
+    <rect x="920" y="308" width="74" height="56" rx="14"/>
+
+    <rect x="320" y="390" width="74" height="56" rx="14"/>
+    <rect x="420" y="390" width="74" height="56" rx="14" fill="#0EA5E9"/>
+    <rect x="520" y="390" width="74" height="56" rx="14" fill="#7DD3FC"/>
+    <rect x="620" y="390" width="74" height="56" rx="14" fill="#7DD3FC"/>
+    <rect x="720" y="390" width="74" height="56" rx="14" fill="#0284C7"/>
+    <rect x="820" y="390" width="74" height="56" rx="14"/>
+    <rect x="920" y="390" width="74" height="56" rx="14"/>
+
+    <rect x="320" y="472" width="74" height="56" rx="14"/>
+    <rect x="420" y="472" width="74" height="56" rx="14"/>
+    <rect x="520" y="472" width="74" height="56" rx="14"/>
+    <rect x="620" y="472" width="74" height="56" rx="14"/>
+    <rect x="720" y="472" width="74" height="56" rx="14"/>
+    <rect x="820" y="472" width="74" height="56" rx="14"/>
+    <rect x="920" y="472" width="74" height="56" rx="14"/>
+  </g>
+
+  <text x="320" y="198" fill="white" font-family="Verdana" font-size="44" font-weight="700">WALL CALENDAR</text>
+</svg>

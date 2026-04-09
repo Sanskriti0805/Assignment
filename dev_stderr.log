@@ -1,0 +1,118 @@
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ TypeError: Cannot read properties of undefined (reading 'getMonth')
+    at getHolidayName (utils\dateHelpers.ts:170:22)
+    at DayCell (components\DayCell.tsx:30:50)
+  168 | // Holiday detection for US holidays
+  169 | export function getHolidayName(date: Date): string | null {
+> 170 |   const month = date.getMonth() + 1;
+      |                      ^
+  171 |   const day = date.getDate();
+  172 |   const year = date.getFullYear();
+  173 | {
+  digest: '1847317108'
+}
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ TypeError: Cannot read properties of undefined (reading 'getMonth')
+    at getHolidayName (utils\dateHelpers.ts:170:22)
+    at DayCell (components\DayCell.tsx:30:50)
+  168 | // Holiday detection for US holidays
+  169 | export function getHolidayName(date: Date): string | null {
+> 170 |   const month = date.getMonth() + 1;
+      |                      ^
+  171 |   const day = date.getDate();
+  172 |   const year = date.getFullYear();
+  173 | {
+  digest: '1847317108'
+}
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ TypeError: Cannot read properties of undefined (reading 'getMonth')
+    at getHolidayName (utils\dateHelpers.ts:170:22)
+    at DayCell (components\DayCell.tsx:30:50)
+  168 | // Holiday detection for US holidays
+  169 | export function getHolidayName(date: Date): string | null {
+> 170 |   const month = date.getMonth() + 1;
+      |                      ^
+  171 |   const day = date.getDate();
+  172 |   const year = date.getFullYear();
+  173 | {
+  digest: '1965389303'
+}
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ TypeError: Cannot read properties of undefined (reading 'getMonth')
+    at getHolidayName (utils\dateHelpers.ts:170:22)
+    at DayCell (components\DayCell.tsx:30:50)
+  168 | // Holiday detection for US holidays
+  169 | export function getHolidayName(date: Date): string | null {
+> 170 |   const month = date.getMonth() + 1;
+      |                      ^
+  171 |   const day = date.getDate();
+  172 |   const year = date.getFullYear();
+  173 | {
+  digest: '1965389303'
+}
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ TypeError: Cannot read properties of undefined (reading 'getMonth')
+    at getHolidayName (utils\dateHelpers.ts:170:22)
+    at DayCell (components\DayCell.tsx:30:50)
+  168 | // Holiday detection for US holidays
+  169 | export function getHolidayName(date: Date): string | null {
+> 170 |   const month = date.getMonth() + 1;
+      |                      ^
+  171 |   const day = date.getDate();
+  172 |   const year = date.getFullYear();
+  173 | {
+  digest: '1965389303'
+}
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ TypeError: Cannot read properties of undefined (reading 'getMonth')
+    at getHolidayName (utils\dateHelpers.ts:170:22)
+    at DayCell (components\DayCell.tsx:30:50)
+  168 | // Holiday detection for US holidays
+  169 | export function getHolidayName(date: Date): string | null {
+> 170 |   const month = date.getMonth() + 1;
+      |                      ^
+  171 |   const day = date.getDate();
+  172 |   const year = date.getFullYear();
+  173 | {
+  digest: '1965389303'
+}
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ TypeError: Cannot read properties of undefined (reading 'getMonth')
+    at getHolidayName (utils\dateHelpers.ts:170:22)
+    at DayCell (components\DayCell.tsx:30:50)
+  168 | // Holiday detection for US holidays
+  169 | export function getHolidayName(date: Date): string | null {
+> 170 |   const month = date.getMonth() + 1;
+      |                      ^
+  171 |   const day = date.getDate();
+  172 |   const year = date.getFullYear();
+  173 | {
+  digest: '1965389303'
+}
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ TypeError: Cannot read properties of undefined (reading 'getMonth')
+    at getHolidayName (utils\dateHelpers.ts:170:22)
+    at DayCell (components\DayCell.tsx:30:50)
+  168 | // Holiday detection for US holidays
+  169 | export function getHolidayName(date: Date): string | null {
+> 170 |   const month = date.getMonth() + 1;
+      |                      ^
+  171 |   const day = date.getDate();
+  172 |   const year = date.getFullYear();
+  173 | {
+  digest: '1965389303'
+}
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ TypeError: Cannot read properties of undefined (reading 'getMonth')
+    at getHolidayName (utils\dateHelpers.ts:170:22)
+    at DayCell (components\DayCell.tsx:30:50)
+  168 | // Holiday detection for US holidays
+  169 | export function getHolidayName(date: Date): string | null {
+> 170 |   const month = date.getMonth() + 1;
+      |                      ^
+  171 |   const day = date.getDate();
+  172 |   const year = date.getFullYear();
+  173 | {
+  digest: '4178393490'
+}
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
